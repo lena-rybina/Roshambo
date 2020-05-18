@@ -9,12 +9,12 @@
 import Foundation
 
 enum GameState {
-    case win
-    case lose
-    case tie
+    case win(title: String, imageName: String)
+    case lose(title: String, imageName: String)
+    case tie(title: String, imageName: String)
 }
 
-enum GameSelectionType: CaseIterable {
+enum GameSelectionType: String, CaseIterable {
     case rock
     case paper
     case scissors
@@ -27,11 +27,12 @@ class GameEngine {
         case (.paper, .rock),
              (.rock, .scissors),
              (.scissors, .paper):
-            return .win
+            
+            return .win(title: "You won!", imageName: "\(userInput)-\(computerInput)")
         case (let currentValue, let inputValue) where currentValue == inputValue:
-            return .tie
+            return .tie(title: "It's a tie!", imageName: "tie")
         default:
-            return .lose
+            return .lose(title: "You lost!", imageName: "\(computerInput)-\(userInput)")
         }
     }
 }

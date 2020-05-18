@@ -16,9 +16,6 @@ class SelectViewController: UIViewController {
     
     var gameState: GameState?
     
-    var userInput: GameSelectionType?
-    var computerInput: GameSelectionType?
-    
     @IBAction func onButtonTap(_ sender: UIButton) {
         let allCases = GameSelectionType.allCases
         
@@ -37,9 +34,6 @@ class SelectViewController: UIViewController {
             userInput = .scissors
         }
         
-        self.userInput = userInput
-        self.computerInput = computerInput
-        
         self.gameState = GameEngine.gameCheck(userInput: userInput,
                                               computerInput: computerInput)
         
@@ -52,12 +46,6 @@ class SelectViewController: UIViewController {
             let controller = segue.destination as? ResultViewController {
             
             controller.gameState = gameState
-            
-            guard let userInput = userInput,
-                let computerInput = computerInput else { return }
-            controller.gameCheck = (userInput,
-                                    computerInput)
-        
         }
     }
 }

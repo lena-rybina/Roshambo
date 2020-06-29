@@ -15,7 +15,8 @@ class SelectViewController: UIViewController {
     @IBOutlet weak var scissorsButton: UIButton!
     
     var gameState: GameState?
-    
+    var match: GameEngine!
+  
     @IBAction func onButtonTap(_ sender: UIButton) {
         let allCases = GameSelectionType.allCases
         
@@ -34,8 +35,11 @@ class SelectViewController: UIViewController {
             userInput = .scissors
         }
         
-        self.gameState = GameEngine.gameCheck(userInput: userInput,
-                                              computerInput: computerInput)
+        gameState = GameEngine.gameCheck(userInput: userInput,
+                                         computerInput: computerInput)
+        if let gameState = gameState {
+            GameEngine.updateGameHistory(with: gameState)
+        }
         
         performSegue(withIdentifier: "resultSegue",
                      sender: self)

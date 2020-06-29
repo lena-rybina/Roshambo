@@ -9,9 +9,10 @@
 import UIKit
 import Foundation
 
-class ResultViewController: UIViewController {
+class ResultViewController: UIViewController, UITabBarDelegate {
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var resultImage: UIImageView!
+    @IBOutlet weak var historyButton: UITabBarItem!
 
     var gameState: GameState? = nil
     
@@ -33,6 +34,11 @@ class ResultViewController: UIViewController {
         // dismiss this view controller
         self.dismiss(animated: true, completion: nil)
     }
+    
+    func tabBar(_ tabBar: UITabBar,
+                didSelect item: UITabBarItem) {
+        performSegue(withIdentifier: "historytSegue",
+                     sender: self)
+    }
 }
-
 

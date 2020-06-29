@@ -21,6 +21,8 @@ enum GameSelectionType: String, CaseIterable {
 }
 
 class GameEngine {
+    static var gameHistory: [Date: GameState] = [:]
+    
     static func gameCheck(userInput: GameSelectionType,
                           computerInput: GameSelectionType)-> GameState {
         switch (userInput, computerInput) {
@@ -34,5 +36,9 @@ class GameEngine {
         default:
             return .lose(title: "You lost!", imageName: "\(computerInput)-\(userInput)")
         }
+    }
+    
+    static func updateGameHistory(with state: GameState) {
+        gameHistory[Date()] = state
     }
 }

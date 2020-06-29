@@ -15,6 +15,7 @@
 		C6B6851A246A0A1F00265ADB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B68518246A0A1F00265ADB /* LaunchScreen.storyboard */; };
 		C6B68522246A0FA700265ADB /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B68521246A0FA700265ADB /* ResultViewController.swift */; };
 		C6B68524246A140A00265ADB /* GameProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B68523246A140A00265ADB /* GameProcessor.swift */; };
+		E440B5F824A577A600AD14A2 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E440B5F724A577A600AD14A2 /* HistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		C6B6851B246A0A1F00265ADB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6B68521246A0FA700265ADB /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		C6B68523246A140A00265ADB /* GameProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProcessor.swift; sourceTree = "<group>"; };
+		E440B5F724A577A600AD14A2 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				C6B68523246A140A00265ADB /* GameProcessor.swift */,
 				C6B68511246A0A1D00265ADB /* SelectViewController.swift */,
 				C6B68521246A0FA700265ADB /* ResultViewController.swift */,
+				E440B5F724A577A600AD14A2 /* HistoryViewController.swift */,
 				C6B68513246A0A1D00265ADB /* Main.storyboard */,
 				C6B68516246A0A1F00265ADB /* Assets.xcassets */,
 				C6B68518246A0A1F00265ADB /* LaunchScreen.storyboard */,
@@ -100,7 +103,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Elena Rybina";
 				TargetAttributes = {
 					C6B68509246A0A1D00265ADB = {
@@ -147,6 +150,7 @@
 				C6B68512246A0A1D00265ADB /* SelectViewController.swift in Sources */,
 				C6B6850E246A0A1D00265ADB /* AppDelegate.swift in Sources */,
 				C6B68524246A140A00265ADB /* GameProcessor.swift in Sources */,
+				E440B5F824A577A600AD14A2 /* HistoryViewController.swift in Sources */,
 				C6B68510246A0A1D00265ADB /* SceneDelegate.swift in Sources */,
 				C6B68522246A0FA700265ADB /* ResultViewController.swift in Sources */,
 			);
@@ -200,6 +204,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -260,6 +265,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

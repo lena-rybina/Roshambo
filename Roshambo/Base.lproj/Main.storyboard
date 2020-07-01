@@ -53,18 +53,18 @@
                                     <constraint firstItem="8Fq-Te-bfK" firstAttribute="height" secondItem="ujG-eW-AAz" secondAttribute="height" id="luP-2z-9dy"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Play!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXq-ma-1e9">
-                                <rect key="frame" x="105.66666666666667" y="282" width="163.66666666666663" height="43"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LET'S PLAY!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXq-ma-1e9">
+                                <rect key="frame" x="87.666666666666686" y="282" width="200" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="jqd-q4-wrj"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="36"/>
-                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="34"/>
+                                <color key="textColor" systemColor="systemIndigoColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
                             <constraint firstItem="lJZ-hT-UTd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LNn-Ym-MCJ"/>
                             <constraint firstItem="lJZ-hT-UTd" firstAttribute="top" secondItem="xXq-ma-1e9" secondAttribute="bottom" constant="53.666666666666686" id="PS0-Hc-eAS"/>
@@ -101,12 +101,12 @@
                                 <rect key="frame" x="67.666666666666686" y="298" width="240" height="128"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGe-N1-8a8">
-                                <rect key="frame" x="101.66666666666669" y="449" width="172" height="55"/>
+                                <rect key="frame" x="99.666666666666686" y="449" width="176" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="UGL-c2-95i"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <state key="normal" title="Play Again!"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                <state key="normal" title="PLAY AGAIN!"/>
                                 <connections>
                                     <action selector="dismiss" destination="bFt-xL-V2a" eventType="touchUpInside" id="GQS-Tz-1hA"/>
                                 </connections>
@@ -141,7 +141,7 @@
                         <outlet property="historyButton" destination="5dU-yN-otZ" id="H1p-ua-eTC"/>
                         <outlet property="resultImage" destination="MLQ-U4-HvI" id="hXL-Za-6vv"/>
                         <outlet property="resultLabel" destination="iE3-NN-nWr" id="bf8-e5-LXo"/>
-                        <segue destination="ODW-6u-740" kind="presentation" identifier="historytSegue" id="4QC-Ku-aQH"/>
+                        <segue destination="ODW-6u-740" kind="show" identifier="historytSegue" id="4QC-Ku-aQH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="okt-TU-7Kc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -184,6 +184,7 @@
                             <constraint firstItem="2ry-dC-Swx" firstAttribute="top" secondItem="mZF-cp-V6S" secondAttribute="top" id="nwm-pN-fj6"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="UN1-HR-HLP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qmw-Sw-4y5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -191,15 +192,15 @@
         </scene>
     </scenes>
     <resources>
-        <image name="paper" width="37.5" height="32.5"/>
-        <image name="rock" width="37.5" height="32.5"/>
-        <image name="scissors" width="37.5" height="32.5"/>
-        <image name="tie" width="91.5" height="100"/>
+        <image name="paper" width="256" height="256"/>
+        <image name="rock" width="256" height="256"/>
+        <image name="scissors" width="256" height="256"/>
+        <image name="tie" width="256" height="256"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
